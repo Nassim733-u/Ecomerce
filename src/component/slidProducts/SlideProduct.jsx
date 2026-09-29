@@ -2,6 +2,8 @@ import React from 'react'
 import Product from './Product'
 import "./slideProduct.css"
 
+
+
  function SlideProduct() {
   return (
     
