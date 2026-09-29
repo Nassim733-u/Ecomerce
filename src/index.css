@@ -120,7 +120,7 @@ code {
   color: var(--white_color);
   display: flex;
   gap: 18px;
-  align-items: center;
+  
   transition: 0.3s;
   width: max-content;
   

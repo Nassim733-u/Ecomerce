@@ -1,6 +1,6 @@
 import React from 'react'
 import Product from './Product'
-import "./slideProduct"
+import "./slideProduct.css"
 
  function SlideProduct() {
   return (
