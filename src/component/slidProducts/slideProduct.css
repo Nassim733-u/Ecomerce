@@ -11,6 +11,7 @@
 
 .slide_product {
     padding: 50px 0;
+    
 }
 
 .top_slide{
@@ -22,6 +23,7 @@
     margin-bottom: 20px;
     border-bottom: 1px solid var(--boeder_color);
     padding: 15px 20px 20px 0; 
+    
 
 }
 
@@ -32,6 +34,7 @@
     width: 100px;
     height:2px ;
     background: var(--main_color);
+    
 }
 
 .top_slide h2 {
@@ -52,6 +55,7 @@
     border-radius: 7px;
     position: relative;
     overflow: hidden;
+    
 }
 
 .product:hover{
@@ -67,11 +71,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    
 }
 
 .product .img_product img{
     height: 160px;
     width: auto;
+    
 }
 
 .product .img_product{
