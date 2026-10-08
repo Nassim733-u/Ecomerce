@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-
+import "./ProductDetails.css"
 import { FaStar } from "react-icons/fa6";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 export default function ProductDetils() {
@@ -26,8 +26,7 @@ useEffect(() => {
         } catch (error) {
 
             console.log(error);
-          /*   console.error('Error fetching product details:', error);
-            setLoading(false); */
+          
         }
     }
     fetchProductDetails();
@@ -42,7 +41,7 @@ if (loading) {
 }
 
     return (
-        <div className='product-details'>
+        <div className='product_details'>
             <div className="container">
 
                 <div className="img_item">
@@ -65,7 +64,7 @@ if (loading) {
 
 
                 <div className="details_item">
-                    <h2>{product.title}</h2>
+                    <h1 className='name'>{product.title}</h1>
                     <div className="star">
                         <FaStar />
                         <FaStar />
@@ -74,7 +73,7 @@ if (loading) {
                         <FaRegStarHalfStroke />
                     </div>
                     
-                    <p>Price: ${product.price}</p>
+                    <p className='price'>Price: ${product.price}</p>
                     <h5>Availability: <span>{product.availabilityStatus}</span></h5>
                     <h5>Brand: <span>{product.availabilityStatus}</span></h5>
                     <h5>Stock: <span>{product.availabilityStatus}</span></h5>
