@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import "./ProductDetails.css"
 import { FaStar } from "react-icons/fa6";
+import { TiShoppingCart } from "react-icons/ti";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
 export default function ProductDetils() {
     const { id } = useParams();
@@ -75,8 +76,18 @@ if (loading) {
                     
                     <p className='price'>Price: ${product.price}</p>
                     <h5>Availability: <span>{product.availabilityStatus}</span></h5>
-                    <h5>Brand: <span>{product.availabilityStatus}</span></h5>
-                    <h5>Stock: <span>{product.availabilityStatus}</span></h5>
+                    <h5>Brand: <span>{product.brand}</span></h5>
+                    <p className='desc'>{product.description}</p>
+                    <h5 className='stock'>Stock: <span>Hurry Up! Only{product.stock} product</span></h5>
+
+
+                                <button className='btn'> 
+                                        Add to cart  <TiShoppingCart />
+                                </button>
+
+
+
+
                 </div>
             </div>
             

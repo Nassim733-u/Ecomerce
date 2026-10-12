@@ -19,6 +19,7 @@ padding: 15px 0;
 
 .top_header .logo{
 width: 160px;
+margin-left: 15px;
 }
 
 .top_header .search_box{
@@ -46,27 +47,32 @@ width: 160px;
  background-color: var(--main_color);
  border-radius:  0 30px 30px 0;
  cursor: pointer;
+ 
 }
 
 .top_header .search_box button svg{
     color: var(--white_color);
+    
 }
 
 
 .top_header .headre_icon{
     display: flex;
-    gap: 30px;
+    margin-right: 100px;
+    
 }
 
 
 .top_header .headre_icon .icon{
     position: relative;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 
 .top_header .headre_icon .icon svg{
-    font-size: 30px;
+    font-size: 28px;
+    
 }
 
 .top_header .headre_icon .icon .count{
